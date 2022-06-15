@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="12.1.3" fileRevision="20120601"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+   <component name="SimpleProcess">
+      <topicDocumentations>
+         <topicDocumentation name="SimpleProcess">
+            <descriptions>
+               <description locale="en">Simple Process Description</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT35342042420987">
+            <labels>
+               <label locale="en">initialize</label>
+            </labels>
+            <descriptions>
+               <description locale="en">initialize description</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT35345081177056">
+            <labels>
+               <label locale="en">Step010</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Step010 description</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT3534509050223">
+            <labels>
+               <label locale="en">InitializeScript</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Initialize Script description</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="EVT35342042420867">
+            <labels>
+               <label locale="en">Start</label>
+            </labels>
+         </topicDocumentation>
+         <topicDocumentation name="EVT35342042420883">
+            <labels>
+               <label locale="en">End</label>
+            </labels>
+         </topicDocumentation>
+         <topicDocumentation name="EVT35345086308016">
+            <labels>
+               <label locale="en">StartMessage</label>
+            </labels>
+            <descriptions>
+               <description locale="en">StartMessage description</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf35342042420969"/>
+         <topicDocumentation name="sf35345083288343"/>
+         <topicDocumentation name="sf35345322213898"/>
+         <topicDocumentation name="sf35345322928119"/>
+         <topicDocumentation name="sf35345323807395"/>
+      </topicDocumentations>
+   </component>
+</processDocumentation>

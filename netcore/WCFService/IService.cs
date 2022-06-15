@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.Threading.Tasks;
 
 namespace WCFService
 {
@@ -19,7 +15,7 @@ namespace WCFService
 	{
 		public string Ping(string msg)
 		{
-			return string.Join(string.Empty, msg.Reverse());
+			return "Hello world, " + string.Join(string.Empty, msg.Reverse()) + "!";
 		}
 	}
 }
