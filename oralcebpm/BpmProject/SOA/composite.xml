@@ -38,6 +38,11 @@
         <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
                         callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
       </reference>
+      <reference name="HumanTasks.Step020Task.reference"
+                 ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
+        <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
+                        callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+      </reference>
     </componentType>
     <property name="bpel.config.oneWayDeliveryPolicy" type="xs:string" many="false">sync</property>
     <property name="bpel.config.transaction" type="xs:string" many="false">required</property>
@@ -60,6 +65,15 @@
       </service>
     </componentType>
   </component>
+  <component name="Step020Task">
+    <implementation.workflow src="HumanTasks/Step020Task.task"/>
+    <componentType>
+      <service name="TaskService" ui:wsdlLocation="oramds:/soa/shared/workflow/TaskServiceInterface.wsdl">
+        <interface.wsdl interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)"
+                        callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+      </service>
+    </componentType>
+  </component>
   <wire>
     <source.uri>SimpleProcess/HumanTasks.InitializeTask.reference</source.uri>
     <target.uri>initializeTask/TaskService</target.uri>
@@ -67,6 +81,10 @@
   <wire>
     <source.uri>SimpleProcess/HumanTasks.Step010Task.reference</source.uri>
     <target.uri>Step010Task/TaskService</target.uri>
+  </wire>
+  <wire>
+    <source.uri>SimpleProcess/HumanTasks.Step020Task.reference</source.uri>
+    <target.uri>Step020Task/TaskService</target.uri>
   </wire>
   <wire>
     <source.uri>SimpleProcess.service</source.uri>

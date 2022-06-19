@@ -50,11 +50,20 @@
                <description locale="en">StartMessage description</description>
             </descriptions>
          </topicDocumentation>
+         <topicDocumentation name="ACT35406067878370">
+            <labels>
+               <label locale="en">Step020</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
          <topicDocumentation name="sf35342042420969"/>
          <topicDocumentation name="sf35345083288343"/>
          <topicDocumentation name="sf35345322213898"/>
          <topicDocumentation name="sf35345322928119"/>
          <topicDocumentation name="sf35345323807395"/>
+         <topicDocumentation name="sf35406068373778"/>
       </topicDocumentations>
    </component>
 </processDocumentation>

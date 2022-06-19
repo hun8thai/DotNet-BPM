@@ -6,7 +6,7 @@ using System.ServiceModel;
 namespace TestProject
 {
     [TestClass]
-    public class TestInboundService
+    public class TestInboundWCFService
     {
         private IPingServiceChannel _client;
 

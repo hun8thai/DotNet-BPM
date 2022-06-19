@@ -11,4 +11,9 @@
     <PackageReference Include="System.ServiceModel.Security" Version="4.6.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Utilitys\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>
